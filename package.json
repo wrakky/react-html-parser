@@ -26,6 +26,7 @@
     "demo:push": "cd demo/dist && git init && git commit --allow-empty -m 'update demo' && git checkout -b gh-pages && git add . && git commit -am 'update demo' && git push git@github.com:wrakky/react-html-parser gh-pages --force",
     "demo:publish": "npm run demo:clean && npm run demo:build && npm run demo:push"
   },
+  "types": "types",
   "repository": {
     "type": "git",
     "url": "https://github.com/wrakky/react-html-parser.git"
