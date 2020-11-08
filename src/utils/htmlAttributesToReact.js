@@ -41,7 +41,7 @@ export default function htmlAttributesToReact(attributes) {
         const lowerCaseAttribute = attribute.toLowerCase();
 
         // format the attribute name
-        const name = ReactAttributes[lowerCaseAttribute] || lowerCaseAttribute;
+        const name = ReactAttributes[lowerCaseAttribute] || attribute;
 
         // add the parsed attribute value to the mapped attributes
         mappedAttributes[name] = getParsedAttributeValue(name, attributes[attribute]);

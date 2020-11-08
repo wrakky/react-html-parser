@@ -10,6 +10,7 @@
     "test": "karma start --single-run",
     "test:watch": "karma start",
     "lint": "eslint src test demo/src",
+    "prepare": "npm run build",
     "build": "npm run build:lib && npm run build:umd && npm run build:umd:min",
     "build:lib": "rimraf lib && babel ./src -d lib",
     "build:umd": "webpack src/index.js dist/react-html-parser.js --config webpack.config.development.js",
